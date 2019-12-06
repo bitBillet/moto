@@ -7,9 +7,11 @@
     margin: 0;
     overflow-x: hidden;
 }
+body{
+    background: #262626;
+}
 header {
     height: 78px;
-    background: #262626;
     background-size: cover;
     .header_text {
         color: #f8f8f8;
@@ -138,5 +140,46 @@ header {
             background: none;
             border: 6px solid #ffffff;
         }
+    }
+}
+.four-jpegs {
+    margin: 45px 45px 0px 45px;
+    height: 850px;
+    .four-jpegs__first-two {
+        display: flex;
+        justify-content: space-between;
+        .four-jpegs__opacity-byke {
+            width: 890px;
+            height: 402px;
+            background-image: url(img/opacity_byke.jpg);
+            background-size: cover;
+            background-color: #004cff;
+        }
+        .four-jpegs__mirrow-byke {
+            height: 402px;
+            width: 417px;
+            background-image: url(img/bike-mirrow.jpg);
+            background-size: cover;
+        }
+    }
+    .four-jpegs__last-two {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        .four-jpegs__wheel-byke {
+            height: 402px;
+            width: 417px;
+            background-image: url(img/bike-wheel.jpg);
+            background-size: cover;
+        }
+        .four-jpegs__full-byke {
+            width: 890px;
+            height: 402px;
+            background-image: url(img/black-bike.jpg);
+            background-size: cover;
+        }
+    }
+    .bg-for_jpeg {
+        background-color: #004cff;
     }
 }
