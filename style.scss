@@ -1,17 +1,20 @@
 
 @import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
 @import "https://fonts.googleapis.com/css?family=Teko&display=swap";
+// Montserrat
+// Teko
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 body{
     background: #262626;
+    overflow-x: hidden;
 }
 header {
     height: 78px;
+    background-color: #262626;
     background-size: cover;
     .header_text {
         color: #f8f8f8;
@@ -74,6 +77,7 @@ header {
                     background-color: #004cff;
                     position: relative;
                     left: 25px;
+                    pointer-events: none;
                 }
                 &.active {
                     color: #004cff;
@@ -142,44 +146,61 @@ header {
         }
     }
 }
-.four-jpegs {
-    margin: 45px 45px 0px 45px;
-    height: 850px;
-    .four-jpegs__first-two {
-        display: flex;
-        justify-content: space-between;
-        .four-jpegs__opacity-byke {
-            width: 890px;
-            height: 402px;
-            background-image: url(img/opacity_byke.jpg);
-            background-size: cover;
-            background-color: #004cff;
+
+.bikes {
+    margin: 45px 45px 0px;
+    height: 848px;
+    .bike-info {
+        position: relative;
+        width: 890px;
+        height: 402px;
+        font-family: Teko;
+        color: #ffffff;
+        .info-content {
+            opacity: 0;
+            position: absolute;
+            background-color: rgba(0, 4, 255, 0.75);
+            width: 100%;
+            height: 100%;
+            &:hover {
+                opacity: 1;
+            }
+            .info-title {
+                width: 371px;
+                height: 150px;
+                color: #ffffff;
+                font-size: 68px;
+                font-weight: 500;
+                line-height: 61.5px;
+                letter-spacing: 2.73px;
+                position: relative;
+                left: 146px;
+                top: 100px;
+            }
+            .info-substring {
+                position: absolute;
+                right: 68px;
+                bottom: 73px;
+                font-size: 78px;
+                font-weight: 700;
+                line-height: 70.5px;
+                width: 100px;
+                span {
+                    font-size: 43px;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+            }
         }
-        .four-jpegs__mirrow-byke {
-            height: 402px;
-            width: 417px;
-            background-image: url(img/bike-mirrow.jpg);
-            background-size: cover;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
-    }
-    .four-jpegs__last-two {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 45px;
-        .four-jpegs__wheel-byke {
-            height: 402px;
-            width: 417px;
-            background-image: url(img/bike-wheel.jpg);
-            background-size: cover;
-        }
-        .four-jpegs__full-byke {
-            width: 890px;
-            height: 402px;
-            background-image: url(img/black-bike.jpg);
-            background-size: cover;
-        }
-    }
-    .bg-for_jpeg {
-        background-color: #004cff;
+
     }
 }
