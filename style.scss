@@ -150,57 +150,74 @@ header {
 .bikes {
     margin: 45px 45px 0px;
     height: 848px;
-    .bike-info {
-        position: relative;
-        width: 890px;
-        height: 402px;
-        font-family: Teko;
-        color: #ffffff;
-        .info-content {
-            opacity: 0;
-            position: absolute;
-            background-color: rgba(0, 4, 255, 0.75);
-            width: 100%;
-            height: 100%;
-            &:hover {
-                opacity: 1;
-            }
-            .info-title {
-                width: 371px;
-                height: 150px;
-                color: #ffffff;
-                font-size: 68px;
-                font-weight: 500;
-                line-height: 61.5px;
-                letter-spacing: 2.73px;
-                position: relative;
-                left: 146px;
-                top: 100px;
-            }
-            .info-substring {
+    .top-bikes {
+        display: flex;
+        justify-content: center;
+        .bike-info {
+            position: relative;
+            width: 890px;
+            height: 402px;
+            font-family: Teko;
+            color: #ffffff;
+            .info-content {
+                opacity: 0;
                 position: absolute;
-                right: 68px;
-                bottom: 73px;
-                font-size: 78px;
-                font-weight: 700;
-                line-height: 70.5px;
-                width: 100px;
-                span {
-                    font-size: 43px;
+                background-color: rgba(0, 4, 255, 0.75);
+                width: 100%;
+                height: 100%;
+                &:hover {
+                    opacity: 1;
+                }
+                .info-title {
+                    width: 50%;
+                    height: 50%;
+                    color: #ffffff;
+                    font-size: 68px;
                     font-weight: 500;
+                    line-height: 61.5px;
+                    letter-spacing: 2.73px;
+                    position: relative;
+                    left: 5%;
+                    top: 20%;
+                }
+                .info-substring {
+                    position: absolute;
+                    right: 68px;
+                    bottom: 73px;
+                    font-size: 78px;
+                    font-weight: 700;
                     line-height: 1;
+                    width: 100px;
+                    span {
+                        font-size: 43px;
+                        font-weight: 500;
+                        line-height: 1;
+                    }
                 }
             }
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+    
         }
-        img {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+        .bike-info__min {
+            width: 417px;
+            margin-left: 44px;
         }
-
+    }
+    .bottom-bikes {
+        margin-top: 45px;
+        .bike-info__min {
+            margin-left: 0;
+        }
+        .bike-info__last {
+            margin-left: 44px;
+        }
     }
 }
