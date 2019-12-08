@@ -137,13 +137,15 @@ header {
       font-family: Teko;
       color: #ffffff; }
       .bikes .top-bikes .bike-info .info-content {
+        transition: opacity .5s;
         opacity: 0;
         position: absolute;
         background-color: rgba(0, 4, 255, 0.75);
         width: 100%;
         height: 100%; }
         .bikes .top-bikes .bike-info .info-content:hover {
-          opacity: 1; }
+          opacity: 1;
+          cursor: pointer; }
         .bikes .top-bikes .bike-info .info-content .info-title {
           width: 50%;
           height: 50%;
