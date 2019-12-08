@@ -187,4 +187,55 @@ header {
     .bikes .bottom-bikes .bike-info__last {
       margin-left: 44px; }
 
+.product {
+  margin: auto;
+  margin-top: 122px;
+  height: 742px;
+  width: 1060px;
+  text-align: center; }
+  .product h2 {
+    color: #f1f1f1;
+    font-family: Teko;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 1; }
+  .product .menu {
+    margin-top: 60px;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1; }
+    .product .menu a {
+      text-decoration: none;
+      color: #f1f1f1;
+      margin-right: 46px; }
+  .product hr {
+    margin-top: 50px;
+    border: 2px solid #b2b2b2; }
+  .product .pdoduct__helmets {
+    margin-top: 74px;
+    display: flex;
+    justify-content: center; }
+    .product .pdoduct__helmets .helm {
+      background-color: #ffffff;
+      height: 510px;
+      width: 340px; }
+      .product .pdoduct__helmets .helm:not(:first-child) {
+        margin-left: 22px; }
+      .product .pdoduct__helmets .helm img {
+        margin: 48px 44px 0px; }
+      .product .pdoduct__helmets .helm .helm__price {
+        color: #262626;
+        font-family: Monstercat;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1;
+        margin: 74px 39px 0px; }
+        .product .pdoduct__helmets .helm .helm__price p {
+          color: #004cff;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 1;
+          margin-top: 27px; }
+
 /*# sourceMappingURL=style.css.map */
