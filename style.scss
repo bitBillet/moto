@@ -252,6 +252,7 @@ header {
         }
     }
     hr {
+        height: 1px;
         margin-top: 50px;
         border: 2px solid #b2b2b2;
     }
@@ -287,3 +288,16 @@ header {
         }
     }
 }
+
+.footer-bikes {
+    margin-top: 130px;
+    height: 1080px;
+        .top-bikes .bike-info {
+            width: 777px;
+            height: 486px;
+        }
+       .top-bikes .bike-info__min {
+            width: 530px;
+            left: -44px;
+        }
+    }
