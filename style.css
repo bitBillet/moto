@@ -10,6 +10,9 @@ body {
   overflow-x: hidden; }
 
 header {
+  width: 100%;
+  position: relative;
+  margin: auto;
   height: 78px;
   background-color: #262626;
   background-size: cover; }
@@ -33,7 +36,8 @@ header {
       margin-right: 28px; }
 
 .main {
-  width: 100%;
+  width: 1440px;
+  margin: auto;
   height: 800px;
   background-image: url(img/harley-davidson-1Lg7p5hC2pI-unsplash.jpg);
   background-size: cover; }
@@ -248,12 +252,17 @@ header {
   .footer-bikes .top-bikes .bike-info__min {
     width: 530px;
     left: -44px; }
+  .footer-bikes .bike-wrapper {
+    display: flex;
+    justify-content: center; }
   .footer-bikes .street-biker {
-    margin: auto;
     width: 1350px;
     height: 550px;
+    margin: auto;
     margin-top: 45px;
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: center; }
     .footer-bikes .street-biker img {
       position: absolute;
       left: 0;
@@ -267,13 +276,16 @@ header {
       background-color: #004cff;
       position: absolute;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      color: #ffffff; }
     .footer-bikes .street-biker form {
-      position: absolute;
-      top: 50%;
-      left: 20%;
+      position: relative;
+      top: 340px;
+      height: 63px;
       font-family: Montserrat;
-      font-size: 19px; }
+      font-size: 19px;
+      display: flex;
+      justify-content: center; }
       .footer-bikes .street-biker form .input-text {
         /* Style for "Rectangle" */
         padding-left: 44px;
@@ -281,16 +293,91 @@ header {
         height: 62px;
         background-color: #ffffff;
         color: #707070;
-        font-weight: 400; }
+        font-weight: 400;
+        border: none; }
+        .footer-bikes .street-biker form .input-text:focus {
+          outline: none;
+          box-shadow: none; }
       .footer-bikes .street-biker form .input-submit {
         /* Style for "SUBMIT" */
-        width: 76px;
-        height: 13px;
         color: #ffffff;
         font-weight: 600;
-        width: 180px;
-        height: 62px;
         background-color: #004cff;
-        border: none; }
+        border: none;
+        outline: none;
+        height: 100%;
+        width: 180px; }
+    .footer-bikes .street-biker h1 {
+      color: #ffffff;
+      font-family: Teko;
+      font-size: 97px;
+      font-weight: 700;
+      line-height: 146.25px;
+      position: absolute;
+      margin-top: 160px; }
+
+.conditions {
+  width: 1058px;
+  height: 165px;
+  margin: auto;
+  margin-top: 105px;
+  display: flex;
+  justify-content: space-between; }
+  .conditions .condition {
+    border: 3px solid #707070;
+    background-color: #ffffff;
+    width: 338px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .conditions .condition img {
+      padding-left: 31px; }
+    .conditions .condition .codition__text {
+      color: #262626;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 0 35px; }
+      .conditions .condition .codition__text div {
+        color: #707070;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 15px; }
+
+.moto-jpegs {
+  display: flex;
+  justify-content: center;
+  margin-top: 104px; }
+  .moto-jpegs img {
+    width: 480px;
+    object-fit: cover;
+    object-position: center; }
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 114px; }
+  .navigation h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 39px; }
+    .navigation h3.follow {
+      margin-top: 68px; }
+  .navigation a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navigation ul {
+    list-style: none; }
+  .navigation .about {
+    width: 250px; }
 
 /*# sourceMappingURL=style.css.map */
