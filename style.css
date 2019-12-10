@@ -1,5 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
 @import "https://fonts.googleapis.com/css?family=Teko&display=swap";
+button {
+  border: none; }
+
+button:hover, .input-submit:hover, a:hover {
+  cursor: pointer;
+  filter: brightness(56%); }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -36,9 +43,10 @@ header {
       margin-right: 28px; }
 
 .main {
-  width: 1440px;
+  transition: background-image 1s ease-in;
+  max-width: 2000px;
   margin: auto;
-  height: 800px;
+  min-height: 1000px;
   background-image: url(img/harley-davidson-1Lg7p5hC2pI-unsplash.jpg);
   background-size: cover; }
   .main .main__header {
@@ -127,6 +135,9 @@ header {
       font-weight: 600;
       background: none;
       border: 6px solid #ffffff; }
+
+.main-reshow {
+  background-image: url(img/gay_on_bike.jpg); }
 
 .bikes {
   margin: 45px 45px 0px;
@@ -407,7 +418,9 @@ header {
       justify-content: space-between; }
 
 .cut {
-  margin: 67px 67px 0px 67px;
+  width: 1306px;
+  margin: auto;
+  margin-top: 67px;
   height: 1px;
   border: 2px solid #b2b2b2; }
 
