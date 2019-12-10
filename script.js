@@ -9,11 +9,11 @@ setInterval (() => {
 }, 5000);
 
 let nav = bikeImage.querySelector('.main__nav');
+document.addEventListener('click', (event) => event.preventDefault());
 
 nav.addEventListener('click', transport);
 
 function transport (event) {
-    event.preventDefault();
     if (event.target.tagName !== 'A') return;
     let elem = event.target.textContent;
     switch (elem) {
@@ -36,4 +36,16 @@ function transport (event) {
         default:
             break;
     }
+}
+
+let textArea = document.body.querySelector('form .input-text');
+textArea.addEventListener('focus', onFocus);
+textArea.addEventListener('blur', onBlur);
+
+function onFocus () {
+    textArea.value = '';
+}
+
+function onBlur () {
+    textArea.value = 'Your email address';
 }
