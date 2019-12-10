@@ -10,7 +10,7 @@ body {
   overflow-x: hidden; }
 
 header {
-  width: 100%;
+  width: 1440px;
   position: relative;
   margin: auto;
   height: 78px;
@@ -363,7 +363,7 @@ header {
   color: #ffffff;
   font-size: 19px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 2;
   margin-top: 114px; }
   .navigation h3 {
     font-size: 25px;
@@ -378,6 +378,56 @@ header {
   .navigation ul {
     list-style: none; }
   .navigation .about {
-    width: 250px; }
+    width: 252px; }
+    .navigation .about .about-social {
+      display: flex;
+      justify-content: space-between; }
+      .navigation .about .about-social .img-wrapper {
+        width: 50px;
+        height: 50px;
+        background-color: #004cff;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 25px; }
+        .navigation .about .about-social .img-wrapper img {
+          margin-top: 50%;
+          transform: translate(0, -50%); }
+  .navigation .info {
+    margin-left: 110px; }
+  .navigation .location {
+    margin-left: 70px;
+    width: 248px; }
+    .navigation .location .location__logo {
+      margin-top: -10px; }
+    .navigation .location .location__text {
+      margin-top: 15px; }
+    .navigation .location .pays {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between; }
+
+.cut {
+  margin: 67px 67px 0px 67px;
+  height: 1px;
+  border: 2px solid #b2b2b2; }
+
+footer {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 60px; }
+  footer a {
+    color: #b2b2b2;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2px;
+    letter-spacing: 0.13px;
+    text-decoration: none; }
+    footer a:nth-child(1) {
+      margin-right: 45px; }
+    footer a:nth-child(2) {
+      margin-right: 509px; }
 
 /*# sourceMappingURL=style.css.map */

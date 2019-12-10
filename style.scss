@@ -13,7 +13,7 @@ body{
     overflow-x: hidden;
 }
 header {
-    width: 100%;
+    width: 1440px;
     position: relative;
     margin: auto;
     height: 78px;
@@ -430,7 +430,7 @@ header {
     color: #ffffff;
     font-size: 19px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 2;
     margin-top: 114px;
     h3 {
         font-size: 25px;
@@ -449,6 +449,69 @@ header {
         list-style: none;
     }
     .about {
-        width: 250px;
+        width: 252px;
+        .about-social {
+            display: flex;
+            justify-content: space-between;
+            .img-wrapper {
+                width: 50px;
+                height: 50px;
+                background-color: #004cff;
+                text-align: center;
+                vertical-align: middle;
+                border-radius: 25px;
+                img {
+                    margin-top: 50%;
+                    transform: translate(0, -50%)
+                }
+            }
+        }
+    }
+    .info {
+        margin-left: 110px;
+    }
+    .location {
+        margin-left: 70px;
+        width: 248px;
+        .location__logo {
+            margin-top: -10px;
+        }
+        .location__text {
+            margin-top: 15px;
+        }
+        .pays {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.cut {
+    margin: 67px 67px 0px 67px;
+    height: 1px;
+    border: 2px solid #b2b2b2;
+}
+
+footer {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 60px;
+    a {
+        color: #b2b2b2;
+        font-family: Montserrat;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.2px;
+        letter-spacing: 0.13px;
+        text-decoration: none;
+        &:nth-child(1) {
+            margin-right: 45px;
+        }
+        &:nth-child(2) {
+            margin-right: 509px;
+        }
     }
 }
