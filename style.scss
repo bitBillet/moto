@@ -18,6 +18,8 @@ button:hover, .input-submit:hover, a:hover {
 body{
     background: #262626;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 header {
     width: 1440px;
@@ -54,7 +56,7 @@ header {
     transition: background-image 1s ease-in;
     max-width: 2000px;
     margin: auto;
-    min-height: 1000px;
+    max-height: 1000px;
     background-image: url(img/harley-davidson-1Lg7p5hC2pI-unsplash.jpg);
     background-size: cover;
     .main__header {
@@ -239,8 +241,6 @@ header {
     }
 }
 
-// Title - Teko
-// Menu & Price - Monstercat
 .product {
     margin: auto;
     margin-top: 122px;
