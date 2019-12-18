@@ -1,7 +1,17 @@
-let bikeImage = document.body.querySelector('.main'),
-points = bikeImage.querySelectorAll('.main__slider p');
+// Events
 
-setInterval (() => {
+window.addEventListener('load', function () {
+    document.body.classList.remove('hide');
+    document.body.classList.add('after-load');
+    document.body.querySelector('.preloader').remove();
+});
+
+
+
+let bikeImage = document.body.querySelector('.main'),
+    points = bikeImage.querySelectorAll('.main__slider p');
+
+setInterval(() => {
     for (let point of points) {
         point.classList.toggle('active');
     }
@@ -13,7 +23,7 @@ document.addEventListener('click', (event) => event.preventDefault());
 
 nav.addEventListener('click', transport);
 
-function transport (event) {
+function transport(event) {
     if (event.target.tagName !== 'A') return;
     let elem = event.target.textContent;
     switch (elem) {
@@ -30,8 +40,8 @@ function transport (event) {
             elem.scrollIntoView();
             break;
         case 'CONTACT':
-                elem = document.body.querySelector('footer');
-                elem.scrollIntoView();
+            elem = document.body.querySelector('footer');
+            elem.scrollIntoView();
             break;
         default:
             break;
@@ -42,10 +52,10 @@ let textArea = document.body.querySelector('form .input-text');
 textArea.addEventListener('focus', onFocus);
 textArea.addEventListener('blur', onBlur);
 
-function onFocus () {
+function onFocus() {
     textArea.value = '';
 }
 
-function onBlur () {
+function onBlur() {
     textArea.value = 'Your email address';
 }
