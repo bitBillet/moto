@@ -63,13 +63,13 @@ header {
     background-color: #262626;
     background-size: cover;
     .header_text {
+        padding-left: 20px;
         color: #f8f8f8;
         position: absolute;
         top: 33px;
         font-size: 12px;
         font-weight: 500;
         font-family: Montserrat;
-        display: inline-flex;
     }
     .list {
         height: 78px;
