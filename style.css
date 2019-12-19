@@ -44,7 +44,7 @@ button:hover, .input-submit:hover, a:hover {
   to {
     transform: translate(-50%, -50%) rotate(360deg); } }
 header {
-  width: 1440px;
+  max-width: 1440px;
   position: relative;
   margin: auto;
   height: 78px;
@@ -56,16 +56,15 @@ header {
     top: 33px;
     font-size: 12px;
     font-weight: 500;
-    left: 192px;
     font-family: Montserrat;
-    display: inline; }
+    display: inline-flex; }
   header .list {
     height: 78px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     flex-direction: row-reverse;
     position: relative;
-    right: 195px; }
+    left: 80%; }
     header .list a:not(:first-child) {
       margin-right: 28px; }
 
@@ -75,7 +74,8 @@ header {
   margin: auto;
   height: 1000px;
   background-image: url(img/harley-davidson-1Lg7p5hC2pI-unsplash.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .main .main__header {
     overflow: hidden;
     position: relative;
@@ -87,7 +87,7 @@ header {
     .main .main__header .main__logo {
       position: relative;
       top: 5px;
-      left: 191px; }
+      left: 10%; }
     .main .main__header .main__nav {
       position: relative; }
       .main .main__header .main__nav a {
@@ -120,7 +120,7 @@ header {
       background-color: #004cff;
       color: #ffffff;
       position: relative;
-      right: 191px; }
+      right: 10%; }
   .main .main__center {
     display: flex;
     justify-content: space-between;
@@ -131,18 +131,18 @@ header {
       font-family: Teko;
       font-size: 68px;
       font-weight: 700;
-      line-height: 72px;
+      line-height: 1.6;
       color: #ffffff;
       width: 328px;
       position: relative;
-      left: 192px;
+      left: 10%;
       letter-spacing: 2.73px;
       overflow: hidden; }
     .main .main__center .main__slider {
       position: relative;
-      position: relative;
-      right: 113px; }
+      right: 10%; }
       .main .main__center .main__slider p {
+        transition: border-color 1s ease-in;
         width: 16px;
         height: 16px;
         border: 4px solid #404040;
@@ -152,7 +152,7 @@ header {
           border-color: #004cff; }
   .main .main__discover {
     position: relative;
-    left: 191px;
+    left: 10%;
     top: 392px; }
     .main .main__discover button {
       width: 248px;
@@ -266,7 +266,8 @@ header {
       .product .pdoduct__helmets .helm:not(:first-child) {
         margin-left: 22px; }
       .product .pdoduct__helmets .helm img {
-        margin: 48px 44px 0px; }
+        margin: 48px 44px 0px;
+        object-position: center; }
       .product .pdoduct__helmets .helm .helm__price {
         color: #262626;
         font-family: Monstercat;
